@@ -1,10 +1,11 @@
+// Open-weight model that runs locally through Ollama !!
+// so, if you wnt to rn thn.......
+// Install it once with:  ollama pull gemma4:e2b !!
 #include <iostream>
 #include <cstdlib>
 #include <cstdio>
 #include <string>
 using namespace std;
-
-// ---------- AI feature: greeting card message written by an open-weight Gemma model (via Ollama) ----------
 #ifdef _WIN32
 #define OPEN_PIPE _popen
 #define CLOSE_PIPE _pclose
@@ -15,8 +16,7 @@ using namespace std;
 #define HIDE_ERRORS " 2>/dev/null"
 #endif
 
-// Open-weight model that runs locally through Ollama.
-// Install it once with:  ollama pull gemma4:e2b
+
 const string AI_MODEL = "gemma4:e2b";
 
 string GenerateCardMessage(int size, int type, int color)
