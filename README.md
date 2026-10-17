@@ -9,12 +9,14 @@ A console-based C++ application that lets customers order flower bouquets and le
 - Automatic price calculation: (type price + color price) x size price
 - Sales statistics: bouquets sold by size, type and color, plus total, minimum, maximum and average sales
 - Daily limit of 10 orders
+- AI greeting card: uses the open-weight Gemma 4 model via Ollama to write a personalised card message for each bouquet
 
 ## Concepts Used
 Classes and objects, static members, arrays, loops, conditionals, input validation, recursion
 
 ## How to Run
 Compile and run with g++:
+Install Ollama first and run: ollama pull gemma4:e2b
 
     g++ "Florist Ordering System.cpp" -o florist
     ./florist
